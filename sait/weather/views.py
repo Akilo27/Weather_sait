@@ -40,3 +40,7 @@ def Delete(request,city):
     delete = City.objects.get(name=city)
     delete.delete()
     return HttpResponseRedirect('/')
+
+
+def map(request):
+    return render(request,'map.html')
